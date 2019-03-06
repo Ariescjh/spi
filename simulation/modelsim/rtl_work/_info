@@ -1,0 +1,105 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\fpga code\spi_interface\simulation\modelsim
+vdetect
+IGkMzh`lR@Hj519V9A3cUY3
+V7F^ZzHTNW:BYR?WSA840A1
+Z1 dF:\fpga code\spi_interface\simulation\modelsim
+w1493882275
+8F:/fpga code/spi_interface/FPGA CODE/detect.v
+FF:/fpga code/spi_interface/FPGA CODE/detect.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work {+incdir+F:/fpga code/spi_interface/FPGA CODE} -O0
+!i10b 1
+!s100 8BS1SAHW0F>?g^KPlI<j41
+!s85 0
+!s108 1493897642.008000
+!s107 F:/fpga code/spi_interface/FPGA CODE/detect.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga code/spi_interface/FPGA CODE|F:/fpga code/spi_interface/FPGA CODE/detect.v|
+!s101 -O0
+vspi_module
+IcEPUXTC86CjBgbPLgE5>o2
+VQ1i;C3JRYZIkRcD9=GJ@>1
+R1
+w1493895001
+8F:/fpga code/spi_interface/FPGA CODE/spi_module.v
+FF:/fpga code/spi_interface/FPGA CODE/spi_module.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ]X_iYb<X81^bKTQU5Y:mE3
+!s85 0
+!s108 1493897641.886000
+!s107 F:/fpga code/spi_interface/FPGA CODE/spi_module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga code/spi_interface/FPGA CODE|F:/fpga code/spi_interface/FPGA CODE/spi_module.v|
+!s101 -O0
+vspi_rx
+I=ZU<Hh:OAmFI2X8?a]J;J3
+V6ZdAdE6l`VS8Og?bc>jE73
+R1
+w1493885069
+8F:/fpga code/spi_interface/FPGA CODE/spi_rx.v
+FF:/fpga code/spi_interface/FPGA CODE/spi_rx.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 4RCl8cZ`0hYdQKT5mLjeL0
+!s85 0
+!s108 1493897642.101000
+!s107 F:/fpga code/spi_interface/FPGA CODE/spi_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga code/spi_interface/FPGA CODE|F:/fpga code/spi_interface/FPGA CODE/spi_rx.v|
+!s101 -O0
+vtop
+I`^L]h[?m]@LFKF23oFQjG3
+VMae0GeJ=Ea@5Gj6dnS;Xa1
+R1
+w1493889951
+8F:/fpga code/spi_interface/FPGA CODE/top.v
+FF:/fpga code/spi_interface/FPGA CODE/top.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 P8CWIE0A0T1NiST1]2K7>0
+!s85 0
+!s108 1493897642.227000
+!s107 F:/fpga code/spi_interface/FPGA CODE/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga code/spi_interface/FPGA CODE|F:/fpga code/spi_interface/FPGA CODE/top.v|
+!s101 -O0
+vtop_tb
+!i10b 1
+!s100 61_[lXVDghi240CXM:V7K2
+I2OPn;e?HX^idJk`YJ7]On0
+V5:e`16^H_niHK9[f<ZVeE2
+R1
+w1493897627
+8F:/fpga code/spi_interface/simulation/modelsim/top.vt
+FF:/fpga code/spi_interface/simulation/modelsim/top.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1493897642.348000
+!s107 F:/fpga code/spi_interface/simulation/modelsim/top.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/fpga code/spi_interface/simulation/modelsim|F:/fpga code/spi_interface/simulation/modelsim/top.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work {+incdir+F:/fpga code/spi_interface/simulation/modelsim} -O0

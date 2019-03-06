@@ -1,0 +1,42 @@
+library verilog;
+use verilog.vl_types.all;
+entity top is
+    port(
+        sys_clk         : in     vl_logic;
+        sys_rst_n       : in     vl_logic;
+        SPI_CLK         : in     vl_logic;
+        SPI_MOSI        : in     vl_logic;
+        SPI_MISO        : out    vl_logic;
+        SPI_CS          : in     vl_logic;
+        slave1_spi_clk  : out    vl_logic;
+        slave1_spi_mosi : out    vl_logic;
+        slave1_spi_cs   : out    vl_logic;
+        slave1_spi_miso : in     vl_logic;
+        slave2_spi_clk  : out    vl_logic;
+        slave2_spi_mosi : out    vl_logic;
+        slave2_spi_cs   : out    vl_logic;
+        slave2_spi_miso : in     vl_logic;
+        slave3_spi_clk  : out    vl_logic;
+        slave3_spi_mosi : out    vl_logic;
+        slave3_spi_cs   : out    vl_logic;
+        slave3_spi_miso : in     vl_logic;
+        slave4_spi_clk  : out    vl_logic;
+        slave4_spi_mosi : out    vl_logic;
+        slave4_spi_cs   : out    vl_logic;
+        slave4_spi_miso : in     vl_logic;
+        slave5_spi_clk  : out    vl_logic;
+        slave5_spi_mosi : out    vl_logic;
+        slave5_spi_cs   : out    vl_logic;
+        slave5_spi_miso : in     vl_logic;
+        slave6_spi_clk  : out    vl_logic;
+        slave6_spi_mosi : out    vl_logic;
+        slave6_spi_cs   : out    vl_logic;
+        slave6_spi_miso : in     vl_logic;
+        slave7_spi_clk  : out    vl_logic;
+        slave7_spi_mosi : out    vl_logic;
+        slave7_spi_cs   : out    vl_logic;
+        slave7_spi_miso : in     vl_logic;
+        f_nce           : out    vl_logic;
+        sram_cs         : out    vl_logic
+    );
+end top;

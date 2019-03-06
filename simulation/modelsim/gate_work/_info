@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\fpga code\spi_interface\simulation\modelsim
+vtop
+!i10b 1
+!s100 NmGzUV=0Z83Z;TdW^lmAV1
+I[hWAgGmAjmzA2leI6clU12
+VMae0GeJ=Ea@5Gj6dnS;Xa1
+Z1 dF:\fpga code\spi_interface\simulation\modelsim
+w1493890241
+8main.vo
+Fmain.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1493890248.889000
+!s107 main.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|main.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0

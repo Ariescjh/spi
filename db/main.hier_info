@@ -1,0 +1,207 @@
+|top
+sys_clk => sys_clk.IN1
+sys_rst_n => sys_rst_n.IN1
+SPI_CLK => SPI_CLK.IN8
+SPI_MOSI => SPI_MOSI.IN7
+SPI_MISO <= spi_rx:u_spi_rx.mcu_spi_miso
+SPI_CS => SPI_CS.IN8
+slave1_spi_clk <= spi_module:u1_spi_module.slave_spi_clk
+slave1_spi_mosi <= spi_module:u1_spi_module.slave_spi_mosi
+slave1_spi_cs <= spi_module:u1_spi_module.slave_spi_cs
+slave1_spi_miso => slave1_spi_miso.IN1
+slave2_spi_clk <= spi_module:u2_spi_module.slave_spi_clk
+slave2_spi_mosi <= spi_module:u2_spi_module.slave_spi_mosi
+slave2_spi_cs <= spi_module:u2_spi_module.slave_spi_cs
+slave2_spi_miso => slave2_spi_miso.IN1
+slave3_spi_clk <= spi_module:u3_spi_module.slave_spi_clk
+slave3_spi_mosi <= spi_module:u3_spi_module.slave_spi_mosi
+slave3_spi_cs <= spi_module:u3_spi_module.slave_spi_cs
+slave3_spi_miso => slave3_spi_miso.IN1
+slave4_spi_clk <= spi_module:u4_spi_module.slave_spi_clk
+slave4_spi_mosi <= spi_module:u4_spi_module.slave_spi_mosi
+slave4_spi_cs <= spi_module:u4_spi_module.slave_spi_cs
+slave4_spi_miso => slave4_spi_miso.IN1
+slave5_spi_clk <= spi_module:u5_spi_module.slave_spi_clk
+slave5_spi_mosi <= spi_module:u5_spi_module.slave_spi_mosi
+slave5_spi_cs <= spi_module:u5_spi_module.slave_spi_cs
+slave5_spi_miso => slave5_spi_miso.IN1
+slave6_spi_clk <= spi_module:u6_spi_module.slave_spi_clk
+slave6_spi_mosi <= spi_module:u6_spi_module.slave_spi_mosi
+slave6_spi_cs <= spi_module:u6_spi_module.slave_spi_cs
+slave6_spi_miso => slave6_spi_miso.IN1
+slave7_spi_clk <= spi_module:u7_spi_module.slave_spi_clk
+slave7_spi_mosi <= spi_module:u7_spi_module.slave_spi_mosi
+slave7_spi_cs <= spi_module:u7_spi_module.slave_spi_cs
+slave7_spi_miso => slave7_spi_miso.IN1
+f_nce <= <VCC>
+sram_cs <= <VCC>
+
+
+|top|detect:u_detect
+sys_clk => flag_7.CLK
+sys_clk => flag_6.CLK
+sys_clk => flag_5.CLK
+sys_clk => flag_4.CLK
+sys_clk => flag_3.CLK
+sys_clk => flag_2.CLK
+sys_clk => flag_1.CLK
+sys_clk => count_full_flag.CLK
+sys_clk => count[0].CLK
+sys_clk => count[1].CLK
+sys_clk => count[2].CLK
+sys_clk => count[3].CLK
+sys_clk => count[4].CLK
+sys_clk => count[5].CLK
+sys_clk => count[6].CLK
+sys_clk => count[7].CLK
+sys_clk => spi_clk_r1.CLK
+sys_clk => spi_clk_r0.CLK
+sys_clk => CS_D~9.DATAIN
+sys_rst_n => flag_7.ACLR
+sys_rst_n => flag_6.ACLR
+sys_rst_n => flag_5.ACLR
+sys_rst_n => flag_4.ACLR
+sys_rst_n => flag_3.ACLR
+sys_rst_n => flag_2.ACLR
+sys_rst_n => flag_1.ACLR
+sys_rst_n => spi_clk_r1.ACLR
+sys_rst_n => spi_clk_r0.ACLR
+sys_rst_n => count_full_flag.ACLR
+sys_rst_n => count[0].PRESET
+sys_rst_n => count[1].ACLR
+sys_rst_n => count[2].ACLR
+sys_rst_n => count[3].ACLR
+sys_rst_n => count[4].ACLR
+sys_rst_n => count[5].ACLR
+sys_rst_n => count[6].ACLR
+sys_rst_n => count[7].ACLR
+sys_rst_n => CS_D~11.DATAIN
+spi_clk => spi_clk_r0.DATAIN
+spi_cs => flag_1.OUTPUTSELECT
+spi_cs => CS_D.OUTPUTSELECT
+spi_cs => CS_D.OUTPUTSELECT
+spi_cs => CS_D.OUTPUTSELECT
+spi_cs => CS_D.OUTPUTSELECT
+spi_cs => CS_D.OUTPUTSELECT
+spi_cs => CS_D.OUTPUTSELECT
+spi_cs => CS_D.OUTPUTSELECT
+spi_cs => CS_D.OUTPUTSELECT
+spi_cs => flag_2.OUTPUTSELECT
+spi_cs => flag_3.OUTPUTSELECT
+spi_cs => flag_4.OUTPUTSELECT
+spi_cs => flag_5.OUTPUTSELECT
+spi_cs => flag_6.OUTPUTSELECT
+spi_cs => flag_7.OUTPUTSELECT
+spi_cs => always1.IN1
+spi_cs => always1.IN1
+spi_cs1 <= flag_1.DB_MAX_OUTPUT_PORT_TYPE
+spi_cs2 <= flag_2.DB_MAX_OUTPUT_PORT_TYPE
+spi_cs3 <= flag_3.DB_MAX_OUTPUT_PORT_TYPE
+spi_cs4 <= flag_4.DB_MAX_OUTPUT_PORT_TYPE
+spi_cs5 <= flag_5.DB_MAX_OUTPUT_PORT_TYPE
+spi_cs6 <= flag_6.DB_MAX_OUTPUT_PORT_TYPE
+spi_cs7 <= flag_7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|spi_module:u1_spi_module
+mcu_spi_clk => slave_spi_clk.DATAB
+mcu_spi_cs => slave_spi_cs.OUTPUTSELECT
+mcu_spi_mosi => slave_spi_mosi.DATAB
+slave_spi_clk <= slave_spi_clk.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_mosi <= slave_spi_mosi.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_cs <= slave_spi_cs.DB_MAX_OUTPUT_PORT_TYPE
+sw_flag => slave_spi_clk.OUTPUTSELECT
+sw_flag => slave_spi_mosi.OUTPUTSELECT
+sw_flag => slave_spi_cs.DATAB
+
+
+|top|spi_module:u2_spi_module
+mcu_spi_clk => slave_spi_clk.DATAB
+mcu_spi_cs => slave_spi_cs.OUTPUTSELECT
+mcu_spi_mosi => slave_spi_mosi.DATAB
+slave_spi_clk <= slave_spi_clk.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_mosi <= slave_spi_mosi.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_cs <= slave_spi_cs.DB_MAX_OUTPUT_PORT_TYPE
+sw_flag => slave_spi_clk.OUTPUTSELECT
+sw_flag => slave_spi_mosi.OUTPUTSELECT
+sw_flag => slave_spi_cs.DATAB
+
+
+|top|spi_module:u3_spi_module
+mcu_spi_clk => slave_spi_clk.DATAB
+mcu_spi_cs => slave_spi_cs.OUTPUTSELECT
+mcu_spi_mosi => slave_spi_mosi.DATAB
+slave_spi_clk <= slave_spi_clk.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_mosi <= slave_spi_mosi.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_cs <= slave_spi_cs.DB_MAX_OUTPUT_PORT_TYPE
+sw_flag => slave_spi_clk.OUTPUTSELECT
+sw_flag => slave_spi_mosi.OUTPUTSELECT
+sw_flag => slave_spi_cs.DATAB
+
+
+|top|spi_module:u4_spi_module
+mcu_spi_clk => slave_spi_clk.DATAB
+mcu_spi_cs => slave_spi_cs.OUTPUTSELECT
+mcu_spi_mosi => slave_spi_mosi.DATAB
+slave_spi_clk <= slave_spi_clk.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_mosi <= slave_spi_mosi.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_cs <= slave_spi_cs.DB_MAX_OUTPUT_PORT_TYPE
+sw_flag => slave_spi_clk.OUTPUTSELECT
+sw_flag => slave_spi_mosi.OUTPUTSELECT
+sw_flag => slave_spi_cs.DATAB
+
+
+|top|spi_module:u5_spi_module
+mcu_spi_clk => slave_spi_clk.DATAB
+mcu_spi_cs => slave_spi_cs.OUTPUTSELECT
+mcu_spi_mosi => slave_spi_mosi.DATAB
+slave_spi_clk <= slave_spi_clk.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_mosi <= slave_spi_mosi.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_cs <= slave_spi_cs.DB_MAX_OUTPUT_PORT_TYPE
+sw_flag => slave_spi_clk.OUTPUTSELECT
+sw_flag => slave_spi_mosi.OUTPUTSELECT
+sw_flag => slave_spi_cs.DATAB
+
+
+|top|spi_module:u6_spi_module
+mcu_spi_clk => slave_spi_clk.DATAB
+mcu_spi_cs => slave_spi_cs.OUTPUTSELECT
+mcu_spi_mosi => slave_spi_mosi.DATAB
+slave_spi_clk <= slave_spi_clk.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_mosi <= slave_spi_mosi.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_cs <= slave_spi_cs.DB_MAX_OUTPUT_PORT_TYPE
+sw_flag => slave_spi_clk.OUTPUTSELECT
+sw_flag => slave_spi_mosi.OUTPUTSELECT
+sw_flag => slave_spi_cs.DATAB
+
+
+|top|spi_module:u7_spi_module
+mcu_spi_clk => slave_spi_clk.DATAB
+mcu_spi_cs => slave_spi_cs.OUTPUTSELECT
+mcu_spi_mosi => slave_spi_mosi.DATAB
+slave_spi_clk <= slave_spi_clk.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_mosi <= slave_spi_mosi.DB_MAX_OUTPUT_PORT_TYPE
+slave_spi_cs <= slave_spi_cs.DB_MAX_OUTPUT_PORT_TYPE
+sw_flag => slave_spi_clk.OUTPUTSELECT
+sw_flag => slave_spi_mosi.OUTPUTSELECT
+sw_flag => slave_spi_cs.DATAB
+
+
+|top|spi_rx:u_spi_rx
+sw_flag1 => Decoder0.IN0
+sw_flag2 => Decoder0.IN1
+sw_flag3 => Decoder0.IN2
+sw_flag4 => Decoder0.IN3
+sw_flag5 => Decoder0.IN4
+sw_flag6 => Decoder0.IN5
+sw_flag7 => Decoder0.IN6
+slave1_spi_miso => mcu_spi_miso.DATAB
+slave2_spi_miso => ~NO_FANOUT~
+slave3_spi_miso => ~NO_FANOUT~
+slave4_spi_miso => ~NO_FANOUT~
+slave5_spi_miso => ~NO_FANOUT~
+slave6_spi_miso => ~NO_FANOUT~
+slave7_spi_miso => ~NO_FANOUT~
+mcu_spi_miso <= mcu_spi_miso.DB_MAX_OUTPUT_PORT_TYPE
+
+

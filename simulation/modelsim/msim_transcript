@@ -1,0 +1,76 @@
+# Reading D:/altera/modelsim/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do main_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\modelsim\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\modelsim\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+F:/fpga\ code/spi_interface/FPGA\ CODE {F:/fpga code/spi_interface/FPGA CODE/spi_module.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module spi_module
+# 
+# Top level modules:
+# 	spi_module
+# vlog -vlog01compat -work work +incdir+F:/fpga\ code/spi_interface/FPGA\ CODE {F:/fpga code/spi_interface/FPGA CODE/detect.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module detect
+# 
+# Top level modules:
+# 	detect
+# vlog -vlog01compat -work work +incdir+F:/fpga\ code/spi_interface/FPGA\ CODE {F:/fpga code/spi_interface/FPGA CODE/spi_rx.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module spi_rx
+# 
+# Top level modules:
+# 	spi_rx
+# vlog -vlog01compat -work work +incdir+F:/fpga\ code/spi_interface/FPGA\ CODE {F:/fpga code/spi_interface/FPGA CODE/top.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# 
+# vlog -vlog01compat -work work +incdir+F:/fpga\ code/spi_interface/simulation/modelsim {F:/fpga code/spi_interface/simulation/modelsim/top.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  top_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps top_tb 
+# Loading work.top_tb
+# Loading work.top
+# Loading work.detect
+# Loading work.spi_module
+# Loading work.spi_rx
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 us
+add wave -position insertpoint  \
+sim:/top_tb/i1/u_detect/count \
+sim:/top_tb/i1/u_detect/CS_D \
+sim:/top_tb/i1/u_detect/count_full_flag \
+sim:/top_tb/i1/u_detect/spi_clk_r0 \
+sim:/top_tb/i1/u_detect/spi_clk_r1 \
+sim:/top_tb/i1/u_detect/spi_clk_r \
+sim:/top_tb/i1/u_detect/flag_1 \
+sim:/top_tb/i1/u_detect/flag_2 \
+sim:/top_tb/i1/u_detect/flag_3 \
+sim:/top_tb/i1/u_detect/flag_4 \
+sim:/top_tb/i1/u_detect/flag_5 \
+sim:/top_tb/i1/u_detect/flag_6 \
+sim:/top_tb/i1/u_detect/flag_7
+restart
+run 100us
+run 1ms
